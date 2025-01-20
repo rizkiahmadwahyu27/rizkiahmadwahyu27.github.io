@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              blue: {
+                950: '#1e3a8a',
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My Portfolio</title>
+</head>
+<body class="dark:bg-blue-950 dark:text-white bg-white">
+    <div class="w-full">
+        <div class="box-navbar fixed top-0 right-0 w-[30%] h-screen bg-gray-900 bg-opacity-90 flex flex-col items-start justify-start p-2 space-y-4 z-50 hidden">
+            <a class="w-full text-white flex gap-2" href="#home">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>Home</a>
+            <a class="w-full text-white flex gap-2" href="#about">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>About Me</a>
+            <a class="w-full text-white flex gap-2" href="portofolio">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
+                </svg>Portfolio</a>
+            <a class="w-full text-white flex gap-2" href="#skills">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>Skills</a>
+            <a class="w-full text-white flex gap-2" href="#experience">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>Experience</a>
+            <a class="w-full text-white flex gap-2" href="#sertifikat">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 0 0-1.883 2.542l.857 6a2.25 2.25 0 0 0 2.227 1.932H19.05a2.25 2.25 0 0 0 2.227-1.932l.857-6a2.25 2.25 0 0 0-1.883-2.542m-16.5 0V6A2.25 2.25 0 0 1 6 3.75h3.879a1.5 1.5 0 0 1 1.06.44l2.122 2.12a1.5 1.5 0 0 0 1.06.44H18A2.25 2.25 0 0 1 20.25 9v.776" />
+                </svg>Sertificate</a>
+        </div>
+        <div class="w-full fixed top-0 z-50 flex justify-between items-center gap-4 fixed-top h-[60px] bg-blue-900 px-7">
+            <div>
+                <h1 class="name-logo logo-box">Rizki Ahmad Wahyu</h1>
+            </div>
+            <div class="tombol-nav">
+                <button id="toggleNav">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                </button>                  
+            </div>
+            
+            <div class="flex justify-center items-center gap-2 nav">
+                <a href="#home" class="hover:bg-blue-600 hover:rounded-md p-2">Home</a>
+                <a href="#about" class="hover:bg-blue-600 hover:rounded-md p-2">About Me</a>
+                <a href="#portofolio" class="hover:bg-blue-600 hover:rounded-md p-2">Portfolio</a>
+                <a href="#skills" class="hover:bg-blue-600 hover:rounded-md p-2">Skills</a>
+                <a href="#experience" class="hover:bg-blue-600 hover:rounded-md p-2">Experience</a>
+                <a href="#sertifikat" class="hover:bg-blue-600 hover:rounded-md p-2">Sertificate</a>
+            </div>
+        </div>
+        <section id="home">
+            <div class="w-full h-screen flex flex-wrap justify-center items-center gap-9 mt-24">
+                <div data-aos="fade-left" class="flex justify-center items-center">
+                    <div>
+                        <h1 class="text-sm">Hi, nama saya</h1>
+                        <h2 class="text-2xl text-gray-400 md:text-4xl">Rizki Ahmad Wahyu, Amd. Kom</h2>
+                        <p class="text-xl md:text-2xl">Web Developer & IT Support</p>
+                        <div class="mt-4 text-gray-400">
+                            <p>Saya juga menguasai teknis pada</p> 
+                            <p>IT Support, baik hardware, software dan jaringan.</p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6285934538355" class="px-4 py-2 bg-blue-400 hover:bg-blue-600 rounded-lg">Contact me</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" class="flex justify-center items-center -mt-18 md:-mt-24">
+                    <div class="group relative flex justify-center items-center md:w-[300px] md:h-[500px] w-[200px] h-[400px]">
+                        <!-- Gambar dengan efek glow -->
+                        <img
+                            src="img/profile-rizki.png"
+                            class="relative z-10 transform transition-transform duration-700 group-hover:scale-110"
+                        >
+                        <!-- Elemen glow -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 blur-lg opacity-0 transition-opacity duration-700 group-hover:opacity-100"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="w-full flex flex-wrap justify-center items-center h-screen bg-gradient-to-b from-purple-500/80 to-blue-400/50 p-20">
+                <div class="flex flex-wrap items-center justify-center rounded-lg drop-shadow-lg shadow-gray-950 border-gray-400 p-5">
+                    <div data-aos="fade-left" class="bg-gradient-to-b from-blue-400/50 to-purple-500/80 flex justify-center items-center p-10 md:w-[500px] w-fit md:h-[500px] h-fit">
+                        <div class="bg-gray-950 rounded-lg flex flex-col justify-center items-center p-5">
+                            <div class="flex justify-center items-center bg-white rounded-full w-[200px] h-[200px] p-4">
+                                <div class="text-black flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                    </svg>                                      
+                                </div>
+                            </div>
+                            <div class="mt-4 flex justify-center items-center text-md md:text-3xl font-bold border-b border-b-purple-600 p-3">
+                                <p>Rizki Ahmad Wahyu</p>
+                            </div>
+                            <div class="md:text-lg text-[10px] mt-2">
+                                <p>WEB DEVELOPER & IT SUPPORT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" class="md:w-[500px] w-fit md:h-[500px] h-fit flex flex-col justify-center items-center p-10 bg-gray-950">
+                        <div class="flex justify-center items-center text-4xl font-bold">
+                            <p>HALLO</p><span class="text-purple-600">!</span>
+                        </div>
+                        <div class="mt-4 flex flex-col justify-center items-center text-lg">
+                            <p>Berikut profie singkat tentang saya.</p>
+                            <p class="mt-8 text-sm">Saya lulusan D-III Manajemen Informatika di Akademi Manajemen Informatika dan Komputer yang ada di Kabupaten Indramayu, saya lulusan tahun 2022 dan menjadi salah satu mahasiswa terbaik peringkat 2 (dua). Saya sangat senang dengan dunia Informatika terlebih saat ini dan kedepannya semua hal yang ada didunia ini akan memerlukan teknologi informatika. dunia teknologi informatika sangat luas dan selalu ada hal baru didalamnya sehingga menjadi tantangan tersendiri bagi saya</p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="files/RizkiAhmadWahyu_CV ATS.pdf" class="px-4 py-2 bg-blue-400 hover:bg-blue-600 rounded-lg" download>Download My CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portofolio">
+            <div class="md:mt-24 mt-[500px] mb-10 flex justify-center items-center">
+                <div class="text-6xl text-gray-400 font-bold">
+                    <h1>My Projects</h1>
+                </div>
+            </div>
+            <div class="w-full h-screen flex flex-wrap justify-center items-center gap-2">
+                <div data-aos="fade-top" class="bg-white md:rounded-lg w-full md:w-[400px] md:h-[300px] h-[350px]">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="img/amik.PNG" alt="aplikasi PPDB" class="w-full md:rounded-lg">
+                        <div class="p-3">
+                            <p class="text-lg font-bold text-gray-700">Aplikasi Pendaftaran & Seleksi Mahasiswa Baru</p>
+                            <p class="text-sm text-gray-600">Aplikasi web ini saya buat sebagai tugas akhir saya (TA), di AMIK Purnama Niaga Indramayu</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-top" class="bg-white md:rounded-lg w-full md:w-[400px] md:h-[300px] h-[350px]">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="img/swit.PNG" alt="game swit jawa" class="w-full md:rounded-lg">
+                        <div class="p-3">
+                            <p class="text-lg font-bold text-gray-700">Aplikasi Game Swit Jawa</p>
+                            <p class="text-sm text-gray-600">Aplikasi web ini saya buat sebagai bahan memperdalam javascript</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-top" class="bg-white md:rounded-lg w-full md:w-[400px] md:h-[300px] h-[350px]">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="img/eraport.jpg" alt="aplikasi E-raport" class="w-full md:rounded-lg">
+                        <div class="p-3">
+                            <p class="text-lg font-bold text-gray-700">Aplikasi E-raport</p>
+                            <p class="text-sm text-gray-600">Aplikasi web ini saya buat sebagai bahan memperdalam framework laravel 9</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-top" class="bg-white md:rounded-lg w-full md:w-[400px] md:h-[300px] h-[350px]">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="img/ecommerce.jpg" alt="aplikasi ecommerce" class="w-full md:rounded-lg">
+                        <div class="p-3">
+                            <p class="text-lg font-bold text-gray-700">Aplikasi Mini Ecomerce</p>
+                            <p class="text-sm text-gray-600">Aplikasi web ini saya buat sebagai salah satu project pelatihan di coding studio</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-top" class="bg-white md:rounded-lg w-full md:w-[400px] md:h-[300px] h-[350px]">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="img/Capture.PNG" alt="gaji" class="w-full md:rounded-lg">
+                        <div class="p-3">
+                            <p class="text-lg font-bold text-gray-700">Aplikasi Penggajian Staff</p>
+                            <p class="text-sm text-gray-600">Aplikasi web ini saya buat sebagai project pertama yang diberikan oleh perusahaan PT Cahaya Mulia Persada Nusa (Bantul - Yogyakarta)</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-top" class="bg-white md:rounded-lg w-full md:w-[400px] md:h-[300px] h-[350px]">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="img/absensi.PNG" alt="gaji" class="w-full md:rounded-lg">
+                        <div class="p-3">
+                            <p class="text-lg font-bold text-gray-700">Aplikasi Absensi Online</p>
+                            <p class="text-sm text-gray-600">Aplikasi web ini saya buat sebagai project kedua yang diberikan oleh perusahaan PT Cahaya Mulia Persada Nusa (Bantul - Yogyakarta)</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-top" class="bg-white md:rounded-lg w-full md:w-[400px] md:h-[300px] h-[350px]">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="img/app gajian.PNG" alt="gaji" class="w-full md:rounded-lg">
+                        <div class="p-3">
+                            <p class="text-lg font-bold text-gray-700">Aplikasi Penggajian SPV & TOP Manager</p>
+                            <p class="text-sm text-gray-600">Aplikasi web ini saya buat sebagai project ketiga yang diberikan oleh perusahaan PT Cahaya Mulia Persada Nusa (Bantul - Yogyakarta)</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-top" class="bg-white md:rounded-lg w-full md:w-[400px] md:h-[300px] h-[350px]">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="img/app tryout.PNG" alt="gaji" class="w-full md:rounded-lg">
+                        <div class="p-3">
+                            <p class="text-lg font-bold text-gray-700">Aplikasi Tryout Online (Ujian Online)</p>
+                            <p class="text-sm text-gray-600">Aplikasi web ini saya buat untuk memperdalam skill saya sebagai web developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="md:mt-72 mt-[2250px] flex justify-center items-center">
+                <div class="text-6xl text-gray-400 font-bold">
+                    <h1>My Skills</h1>
+                </div>
+            </div>
+            <div class="w-full h-screen flex flex-wrap justify-center items-center gap-2">
+                <div data-aos="fade-left" class="md:w-[600px] w-full md:rounded-lg md:h-[400px] bg-white flex flex-wrap justify-center items-center">
+                    <div>
+                        <img src="img/logo skills.jpg" alt="sklis" class="rounded-t-lg">
+                    </div>
+                    
+                </div>
+                <div data-aos="fade-right" class="md:w-[600px] w-full md:rounded-lg md:h-[400px] bg-white flex flex-wrap justify-center items-center">
+                    <div>
+                        <img src="img/laravel.png" alt="sklis" class="rounded-t-lg">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <div class="flex justify-center items-center mb-5">
+                <div class="text-6xl text-gray-400 font-bold">
+                    <h1>My Experience</h1>
+                </div>
+            </div>
+            <div class="w-full h-screen flex flex-wrap justify-center items-center">
+                <div data-aos="fade-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1293371739903!2d110.32847167443468!3d-7.881533878386586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a55ff8b20529d%3A0x2c7378323aaa42f4!2sPT%20Cahaya%20Mulia%20Persada%20Nusa!5e0!3m2!1sid!2sid!4v1737334192142!5m2!1sid!2sid" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div data-aos="fade-left" class="flex flex-col justify-center items-center w-full md:w-[600px]">
+                    <div>
+                        <img src="img/cmpn.jpeg" alt="pt Cahaya Mulia Persada Nusa" class="w-full md:w-[600px] md:h-[320px]">
+                    </div>
+                    <div class="bg-white text-[11px] text-gray-600 p-4 w-full md:w-[600px] md:h-[180px]">
+                        <li>Membuat sistem informasi yang dibutuhkan perusahaan untuk menunjang mobilitas pekrjaan.</li>
+                        <li>Mengembangkan sistem informasiyang sudah ada di perusahaan.</li>
+                        <li>Maintenance dan memasang jaringan networking perusahaan.</li>
+                        <li>Memasang dan maintenance CCTV perusahaan.</li>
+                        <li>Melakukan dokumentasi kegitan perusahaan.</li>
+                        <li>Membantu mengatasi kendala hardware dan software perusahaan.</li>
+                        <li>Maintenance Server perusahaan.</li>
+                        <li>Memastikan perangkat kerja karyawan berjalan dengan baik.</li>
+                        <li>Maintenance Panel Informasi bagian produksi (TV Informasi).</li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sertifikat">
+            <div class="flex justify-center items-center md:mt-8 mt-[150px]">
+                <div class="text-6xl text-gray-400 font-bold mb-10">
+                    <h1>My Sertifikat</h1>
+                </div>
+            </div>
+            <div class="w-full h-screen flex flex-wrap justify-center items-center gap-3">
+                <div data-aos="fade-top" class="bg-white md:rounded-lg w-full md:w-[400px] md:h-[350px] h-[450px]">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="img/sertifikat1.jpeg" alt="aplikasi PPDB" class="w-full md:rounded-lg">
+                        <div class="p-3">
+                            <p class="text-md font-bold text-gray-700">Sertifikat Penghargaan Mahasiswa Terbaik di AMIK Purnama Niaga Indramayu</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-top" class="bg-white md:rounded-lg w-full md:w-[400px] md:h-[350px] h-[450px]">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="img/sertifikat2.jpeg" alt="game swit jawa" class="w-full md:rounded-lg">
+                        <div class="p-3">
+                            <p class="text-md font-bold text-gray-700">Sertifikat Pelatihan Laravel 9 di Coding Studio</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-top" class="bg-white md:rounded-lg w-full md:w-[400px] md:h-[350px] h-[450px]">
+                    <div class="flex flex-col justify-between items-center">
+                        <img src="img/sertifikat3.jpeg" alt="aplikasi E-raport" class="w-full md:rounded-lg">
+                        <div class="p-3">
+                            <p class="text-md font-bold text-gray-700">Sertifikat Pelatihan IT Support di Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="flex flex-wrap justify-center items-center gap-10 w-full h-[300px] md:mt-8 mt-[500px] bg-gradient-to-r from-blue-400/20 to-purple-500/80">
+                <div class="blok">
+                    <div class="text-xl md:text-5xl text-gray-300 font-bold">
+                        <h1>Rizki Ahmad Wahyu</h1>
+                    </div>
+                    <div class="text-md md:text-lg text-gray-300 font-bold">
+                        <h1>rizkiahmadwahyu27@gmail.com</h1>
+                    </div>
+                    <div class="text-[10px] md:text-sm text-gray-300 font-bold">
+                        <h1>Desa Sukaurip, Kec. Balongan, Kab. Indramayu</h1>
+                    </div>
+                </div>
+                <div class="blok">
+                    <div class="text-sm md:text-xl text-gray-300 font-bold ml-2">
+                        <h1>Link</h1>
+                    </div>
+                    <div class="text-[10px] md:text-sm blok">
+                        <div><a href="#home" class="hover:text-blue-400 hover:rounded-md p-2">Home</a></div>
+                        <div><a href="#about" class="hover:text-blue-400 hover:rounded-md p-2">About Me</a></div>
+                        <div><a href="#portofolio" class="hover:text-blue-400 hover:rounded-md p-2">Portfolio</a></div>
+                        <div><a href="#skills" class="hover:text-blue-400 hover:rounded-md p-2">Skills</a></div>
+                        <div><a href="#experience" class="hover:text-blue-400 hover:rounded-md p-2">Experience</a></div>
+                        <div><a href="#sertifikat" class="hover:text-blue-400 hover:rounded-md p-2">Sertificate</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+   <script src="script.js"></script>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
