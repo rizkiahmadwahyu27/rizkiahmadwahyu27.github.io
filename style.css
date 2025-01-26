@@ -5,6 +5,8 @@
 *{
   padding: 0;
   margin: 0;
+  border: 1px solid #fff;
+  color: #fff;
   box-sizing: border-box;
 }
 body{
@@ -206,13 +208,18 @@ a
 
 @media (max-width: 768px) {
     .name-logo {
-      width: 30%;
+      width: 20%;
       font-size: 0.8rem; /* Ukuran teks untuk layar lebar */
     }
     
   }
 
-
+@media (max-width: 767px) {
+  /* Styles for screens smaller than 768px (mobile) */
+  .box-navbar {
+    width: [percentage value];  /* Adjust width for smaller screens */
+  }
+}
 
 @keyframes glow {
     0% {

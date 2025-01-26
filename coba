@@ -1,81 +1,54 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              blue: {
-                950: '#1e3a8a',
-              },
-            },
-          },
-        },
-      };
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>My Portfolio</title>
-</head>
-<body class="dark:bg-blue-950 dark:text-white bg-white">
-    <div class="w-full">
-        <nav>
-            <div class="w-full h-[50px] flex justify-between items-center bg-blue-900 fixed top-0 z-50 p-4">
-                <div>
-                    <h1 class="name-logo logo-box">Rizki Ahmad Wahyu</h1>
-                </div>
-                <div class="nav flex justify-center items-start gap-3">
-                    <div>
-                        <a href="#dashboard" class="hover:bg-blue-700 rounded-md p-2">Dashboard</a>
-                        <a href="#about" class="hover:bg-blue-700 rounded-md p-2">About me</a>
-                        <a href="#portofolio" class="hover:bg-blue-700 rounded-md p-2">Portofolio</a>
-                        <a href="#skill" class="hover:bg-blue-700 rounded-md p-2">Skills</a>
-                        <a href="#sertifikat" class="hover:bg-blue-700 rounded-md p-2">Sertifikat</a>
-                    </div>
-                </div>
-                <div class="box-navbar fixed top-[55px] right-0 w-[40%] h-screen bg-gray-900 bg-opacity-90 flex flex-col items-start justify-start left-[2px] right-[2px] z-50 hidden">
-                    <a class="w-full text-white flex gap-2" href="#home">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                        </svg>Home</a>
-                    <a class="w-full text-white flex gap-2" href="#about">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>About Me</a>
-                    <a class="w-full text-white flex gap-2" href="portofolio">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
-                        </svg>Portfolio</a>
-                    <a class="w-full text-white flex gap-2" href="#skills">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                        </svg>Skills</a>
-                    <a class="w-full text-white flex gap-2" href="#experience">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>Experience</a>
-                    <a class="w-full text-white flex gap-2" href="#sertifikat">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 0 0-1.883 2.542l.857 6a2.25 2.25 0 0 0 2.227 1.932H19.05a2.25 2.25 0 0 0 2.227-1.932l.857-6a2.25 2.25 0 0 0-1.883-2.542m-16.5 0V6A2.25 2.25 0 0 1 6 3.75h3.879a1.5 1.5 0 0 1 1.06.44l2.122 2.12a1.5 1.5 0 0 0 1.06.44H18A2.25 2.25 0 0 1 20.25 9v.776" />
-                        </svg>Sertificate</a>
-                </div>
-                <div class="tombol-nav">
-                    <button id="toggleNav">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-                        </svg>
-                    </button>                  
-                </div>
+<div class="w-full">
+        <div class="box-navbar fixed top-[55px] right-0 w-[30%] h-screen bg-gray-900 bg-opacity-90 flex flex-col items-start justify-start p-2 space-y-4 z-50 hidden">
+            <a class="w-full text-white flex gap-2" href="#home">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>Home</a>
+            <a class="w-full text-white flex gap-2" href="#about">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>About Me</a>
+            <a class="w-full text-white flex gap-2" href="portofolio">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
+                </svg>Portfolio</a>
+            <a class="w-full text-white flex gap-2" href="#skills">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>Skills</a>
+            <a class="w-full text-white flex gap-2" href="#experience">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>Experience</a>
+            <a class="w-full text-white flex gap-2" href="#sertifikat">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 0 0-1.883 2.542l.857 6a2.25 2.25 0 0 0 2.227 1.932H19.05a2.25 2.25 0 0 0 2.227-1.932l.857-6a2.25 2.25 0 0 0-1.883-2.542m-16.5 0V6A2.25 2.25 0 0 1 6 3.75h3.879a1.5 1.5 0 0 1 1.06.44l2.122 2.12a1.5 1.5 0 0 0 1.06.44H18A2.25 2.25 0 0 1 20.25 9v.776" />
+                </svg>Sertificate</a>
+        </div>
+        <div class="w-full fixed top-0 z-50 flex justify-between items-center gap-4 fixed-top h-[60px] bg-blue-900 px-7">
+            <div>
+                <h1 class="name-logo logo-box">Rizki Ahmad Wahyu</h1>
             </div>
-        </nav>
+            <div class="tombol-nav">
+                <button id="toggleNav">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                </button>                  
+            </div>
+            
+            <div class="flex justify-center items-center gap-2 nav">
+                <a href="#home" class="hover:bg-blue-600 hover:rounded-md p-2">Home</a>
+                <a href="#about" class="hover:bg-blue-600 hover:rounded-md p-2">About Me</a>
+                <a href="#portofolio" class="hover:bg-blue-600 hover:rounded-md p-2">Portfolio</a>
+                <a href="#skills" class="hover:bg-blue-600 hover:rounded-md p-2">Skills</a>
+                <a href="#experience" class="hover:bg-blue-600 hover:rounded-md p-2">Experience</a>
+                <a href="#sertifikat" class="hover:bg-blue-600 hover:rounded-md p-2">Sertificate</a>
+            </div>
+        </div>
         <section id="home">
-            <div class="h-screen flex flex-wrap justify-center items-center md:gap-10">
-                <div data-aos="fade-left" class="flex justify-center items-center p-5">
+            <div class="w-full h-screen flex flex-wrap justify-center items-center gap-9 mt-24">
+                <div data-aos="fade-left" class="flex justify-center items-center">
                     <div>
                         <h1 class="text-sm">Hi, nama saya</h1>
                         <h2 class="text-2xl text-gray-400 md:text-4xl">Rizki Ahmad Wahyu, Amd. Kom</h2>
@@ -89,10 +62,13 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-right" class="flex justify-center items-center mt-18 md:-mt-24">
+                <div data-aos="fade-right" class="flex justify-center items-center -mt-18 md:-mt-24">
                     <div class="group relative flex justify-center items-center md:w-[300px] md:h-[500px] w-[200px] h-[400px]">
                         <!-- Gambar dengan efek glow -->
-                        <img src="img/profile-rizki.png" class="relative z-10 transform transition-transform duration-700 group-hover:scale-110">
+                        <img
+                            src="img/profile-rizki.png"
+                            class="relative z-10 transform transition-transform duration-700 group-hover:scale-110"
+                        >
                         <!-- Elemen glow -->
                         <div
                             class="absolute inset-0 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 blur-lg opacity-0 transition-opacity duration-700 group-hover:opacity-100"
@@ -218,12 +194,12 @@
             </div>
         </section>
         <section id="skills">
-            <div class="md:mt-72 mt-[2000px] flex justify-center items-center">
+            <div class="md:mt-72 mt-[2250px] flex justify-center items-center">
                 <div class="text-6xl text-gray-400 font-bold">
                     <h1>My Skills</h1>
                 </div>
             </div>
-            <div class="h-screen flex flex-wrap justify-center items-center gap-2">
+            <div class="w-full h-screen flex flex-wrap justify-center items-center gap-2">
                 <div data-aos="fade-left" class="md:w-[600px] w-full md:rounded-lg md:h-[400px] bg-white flex flex-wrap justify-center items-center">
                     <div>
                         <img src="img/logo skills.jpg" alt="sklis" class="rounded-t-lg">
@@ -244,24 +220,24 @@
                     <h1>My Experience</h1>
                 </div>
             </div>
-            <div class="h-screen flex flex-wrap justify-center items-center">
-                <div data-aos="fade-right" class="w-full">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1293371739903!2d110.32847167443468!3d-7.881533878386586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a55ff8b20529d%3A0x2c7378323aaa42f4!2sPT%20Cahaya%20Mulia%20Persada%20Nusa!5e0!3m2!1sid!2sid!4v1737334192142!5m2!1sid!2sid" class="w-full" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="w-full h-screen flex flex-wrap justify-center items-center">
+                <div data-aos="fade-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1293371739903!2d110.32847167443468!3d-7.881533878386586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a55ff8b20529d%3A0x2c7378323aaa42f4!2sPT%20Cahaya%20Mulia%20Persada%20Nusa!5e0!3m2!1sid!2sid!4v1737334192142!5m2!1sid!2sid" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div data-aos="fade-left" class="flex flex-col justify-center items-center w-full md:w-[600px]">
                     <div>
                         <img src="img/cmpn.jpeg" alt="pt Cahaya Mulia Persada Nusa" class="w-full md:w-[600px] md:h-[320px]">
                     </div>
-                    <div class="bg-white text-[10px] text-gray-600 p-4 w-full md:w-[600px] md:h-[180px]">
-                        <li class="text-gray-600">Membuat sistem informasi yang dibutuhkan perusahaan untuk menunjang mobilitas pekrjaan.</li>
-                        <li class="text-gray-600">Mengembangkan sistem informasiyang sudah ada di perusahaan.</li>
-                        <li class="text-gray-600">Maintenance dan memasang jaringan networking perusahaan.</li>
-                        <li class="text-gray-600">Memasang dan maintenance CCTV perusahaan.</li>
-                        <li class="text-gray-600">Melakukan dokumentasi kegitan perusahaan.</li>
-                        <li class="text-gray-600">Membantu mengatasi kendala hardware dan software perusahaan.</li>
-                        <li class="text-gray-600">Maintenance Server perusahaan.</li>
-                        <li class="text-gray-600">Memastikan perangkat kerja karyawan berjalan dengan baik.</li>
-                        <li class="text-gray-600">Maintenance Panel Informasi bagian produksi (TV Informasi).</li>
+                    <div class="bg-white text-[11px] text-gray-600 p-4 w-full md:w-[600px] md:h-[180px]">
+                        <li>Membuat sistem informasi yang dibutuhkan perusahaan untuk menunjang mobilitas pekrjaan.</li>
+                        <li>Mengembangkan sistem informasiyang sudah ada di perusahaan.</li>
+                        <li>Maintenance dan memasang jaringan networking perusahaan.</li>
+                        <li>Memasang dan maintenance CCTV perusahaan.</li>
+                        <li>Melakukan dokumentasi kegitan perusahaan.</li>
+                        <li>Membantu mengatasi kendala hardware dan software perusahaan.</li>
+                        <li>Maintenance Server perusahaan.</li>
+                        <li>Memastikan perangkat kerja karyawan berjalan dengan baik.</li>
+                        <li>Maintenance Panel Informasi bagian produksi (TV Informasi).</li>
                     </div>
                 </div>
             </div>
@@ -328,11 +304,3 @@
             </div>
         </footer>
     </div>
-   <script src="script.js"></script>
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
-</html>
