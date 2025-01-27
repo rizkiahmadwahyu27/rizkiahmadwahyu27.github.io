@@ -46,12 +46,12 @@
                 <a href="#sertifikat" class="hover:bg-blue-600 hover:rounded-md p-2">Sertificate</a>
             </div>
         </div>
-        <section id="home" class="w-full bg-white">
-            <div class="h-screen flex flex-wrap items-center justify-center gap-y-8 md:gap-x-10 px-4 md:mt-0 mt-24">
+        <section id="home" class="bg-white">
+            <div class="h-screen flex flex-wrap items-center justify-center md:mt-0 mt-24">
               <!-- Teks Intro -->
               <div 
                 data-aos="fade-left" 
-                class="flex flex-col items-start justify-between md:text-left p-2 max-w-lg"
+                class="flex flex-col items-start justify-between md:text-left p-2"
               >
                 <h1 class="text-sm text-gray-500">Hi, nama saya</h1>
                 <h2 class="text-lg text-gray-800 font-bold md:text-4xl">
@@ -62,7 +62,7 @@
                   <p>Saya juga menguasai teknis pada</p>
                   <p>IT Support, baik hardware, software, dan jaringan.</p>
                 </div>
-                <div>
+                <div class="-mt-14">
                   <a
                     href="https://wa.me/6285934538355"
                     class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition-all"
@@ -89,13 +89,13 @@
                 ></div>
               </div>
             </div>
-          </section>
-          <section id="about" class="w-full bg-gradient-to-b from-purple-500/80 to-blue-400/50 py-10">
-            <div class="flex flex-wrap justify-center items-center gap-8 px-4 md:px-20">
+        </section>
+        <section id="about" class="w-full bg-gradient-to-b from-purple-500/80 to-blue-400/50 py-10">
+            <div class="flex flex-wrap justify-center items-center gap-8 p-5">
               <!-- Card Kiri -->
               <div 
                 data-aos="fade-left" 
-                class="bg-gradient-to-b from-blue-400/50 to-purple-500/80 rounded-lg shadow-lg p-8 w-full md:w-[450px] flex flex-col items-center"
+                class="bg-gradient-to-b from-blue-400/50 to-purple-500/80 rounded-lg shadow-lg p-8 w-full md:w-[450px] flex flex-col items-center h-fit"
               >
                 <div class="bg-gray-950 rounded-lg flex flex-col items-center p-6">
                   <!-- Avatar -->
@@ -140,9 +140,8 @@
                 </div>
               </div>
             </div>
-          </section>
-          
-          <section id="portofolio" class="py-16 bg-gradient-to-b from-gray-100 to-gray-200">
+        </section>  
+        <section id="portofolio" class="py-16 bg-gradient-to-b from-gray-100 to-gray-200">
             <!-- Judul -->
             <div class="text-center mb-10">
               <h1 class="text-4xl md:text-6xl font-bold text-gray-700">My Projects</h1>
@@ -231,15 +230,15 @@
                 </div>
               </div>
             </div>
-          </section>
-          <section id="skills" class="py-16 bg-gradient-to-b from-gray-100 to-gray-200">
+        </section>
+          <section id="skills" class="bg-gradient-to-b from-gray-100 to-gray-200 p-5">
             <!-- Judul -->
             <div class="text-center mb-10">
               <h1 class="text-4xl md:text-6xl font-bold text-gray-700">My Skills</h1>
             </div>
           
             <!-- Kontainer Skills -->
-            <div class="container mx-auto px-6 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="container mx-auto grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <!-- Skill 1 -->
               <div data-aos="fade-up" class="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img src="img/logo skills.jpg" alt="Skill Logo" class="w-full h-48 object-cover">
@@ -276,63 +275,63 @@
               </div>
             </div>
           </section>
-          <section id="experience" class="py-16 bg-gradient-to-b from-gray-100 to-gray-200">
+          <section id="experience" class="bg-gradient-to-b from-gray-100 to-gray-200 p-5">
             <!-- Judul -->
             <div class="text-center mb-10">
               <h1 class="text-4xl md:text-6xl font-bold text-gray-700">My Experience</h1>
             </div>
           
-            <!-- Kontainer Konten -->
-            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <!-- Peta Lokasi -->
-              <div data-aos="fade-right" class="w-full">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1293371739903!2d110.32847167443468!3d-7.881533878386586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a55ff8b20529d%3A0x2c7378323aaa42f4!2sPT%20Cahaya%20Mulia%20Persada%20Nusa!5e0!3m2!1sid!2sid!4v1737334192142!5m2!1sid!2sid" 
-                  class="w-full rounded-lg shadow-lg" 
-                  height="400" 
-                  style="border:0;" 
-                  allowfullscreen="" 
-                  loading="lazy" 
-                  referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <!-- Kontainer Skills -->
+            <div class="container mx-auto grid gap-0 sm:grid-cols-1 md:grid-cols-2">
+              <div>
+                <div data-aos="fade-right" class="w-full">
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1293371739903!2d110.32847167443468!3d-7.881533878386586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a55ff8b20529d%3A0x2c7378323aaa42f4!2sPT%20Cahaya%20Mulia%20Persada%20Nusa!5e0!3m2!1sid!2sid!4v1737334192142!5m2!1sid!2sid" 
+                      class="w-full rounded-lg shadow-lg md:h-[670px]" 
+                      height="400" 
+                      style="border:0;" 
+                      allowfullscreen="" 
+                      loading="lazy" 
+                      referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
               </div>
-          
-              <!-- Informasi Pengalaman -->
-              <div data-aos="fade-left" class="w-full flex flex-col items-center">
-                <!-- Gambar -->
-                <div>
-                  <img 
-                    src="img/cmpn.jpeg" 
-                    alt="PT Cahaya Mulia Persada Nusa" 
-                    class="w-full rounded-lg shadow-lg md:w-[600px] md:h-[320px] object-cover">
-                </div>
-          
-                <!-- Deskripsi -->
-                <div class="bg-white text-sm md:text-base text-gray-600 p-6 rounded-lg shadow-lg mt-4 w-full md:w-[600px]">
-                  <ul class="list-disc list-inside space-y-2">
-                    <li>Membuat sistem informasi yang dibutuhkan perusahaan untuk menunjang mobilitas pekerjaan.</li>
-                    <li>Mengembangkan sistem informasi yang sudah ada di perusahaan.</li>
-                    <li>Maintenance dan memasang jaringan networking perusahaan.</li>
-                    <li>Memasang dan maintenance CCTV perusahaan.</li>
-                    <li>Melakukan dokumentasi kegiatan perusahaan.</li>
-                    <li>Membantu mengatasi kendala hardware dan software perusahaan.</li>
-                    <li>Maintenance server perusahaan.</li>
-                    <li>Memastikan perangkat kerja karyawan berjalan dengan baik.</li>
-                    <li>Maintenance panel informasi bagian produksi (TV Informasi).</li>
-                  </ul>
-                </div>
+              <div>
+                <div data-aos="fade-left" class="flex flex-col items-center">
+                    <!-- Gambar -->
+                    <div>
+                      <img 
+                        src="img/cmpn.jpeg" 
+                        alt="PT Cahaya Mulia Persada Nusa" 
+                        class="w-full rounded-lg shadow-lg md:w-[600px] md:h-[320px] object-cover">
+                    </div>
+              
+                    <!-- Deskripsi -->
+                    <div class="bg-white text-sm md:text-base text-gray-900 p-4 rounded-lg shadow-lg mt-4 flex flex-col justify-between items-center">
+                      <ul class="list-disc list-inside space-y-2">
+                        <li class="text-gray-900">Membuat sistem informasi yang dibutuhkan perusahaan untuk menunjang mobilitas pekerjaan.</li>
+                        <li class="text-gray-900">Mengembangkan sistem informasi yang sudah ada di perusahaan.</li>
+                        <li class="text-gray-900">Maintenance dan memasang jaringan networking perusahaan.</li>
+                        <li class="text-gray-900">Memasang dan maintenance CCTV perusahaan.</li>
+                        <li class="text-gray-900">Melakukan dokumentasi kegiatan perusahaan.</li>
+                        <li class="text-gray-900">Membantu mengatasi kendala hardware dan software perusahaan.</li>
+                        <li class="text-gray-900">Maintenance server perusahaan.</li>
+                        <li class="text-gray-900">Memastikan perangkat kerja karyawan berjalan dengan baik.</li>
+                        <li class="text-gray-900">Maintenance panel informasi bagian produksi (TV Informasi).</li>
+                      </ul>
+                    </div>
+                  </div>
               </div>
             </div>
           </section>
-          
-          <section id="sertifikat" class="py-16 bg-gradient-to-b from-gray-100 to-gray-200">
+          <section id="sertifikat" class=" bg-gradient-to-b from-gray-100 to-gray-200 p-5">
             <!-- Judul -->
             <div class="text-center mb-10">
               <h1 class="text-4xl md:text-6xl font-bold text-gray-700">My Sertifikat</h1>
             </div>
           
             <!-- Galeri Sertifikat -->
-            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
               <!-- Sertifikat 1 -->
               <div data-aos="fade-top" class="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img src="img/sertifikat1.jpeg" alt="Sertifikat Mahasiswa Terbaik" class="w-full object-cover h-60">
@@ -358,27 +357,27 @@
               </div>
             </div>
           </section>
-          <footer class="bg-gradient-to-r from-blue-500/20 to-purple-500/80 py-12">
-            <div class="container mx-auto px-6 flex flex-wrap justify-between items-center gap-6">
+          <footer class="w-full bg-gradient-to-r from-blue-500/20 to-purple-500/80 p-5">
+            <div class="w-full flex flex-wrap justify-between items-center">
               <!-- Kolom Informasi -->
               <div class="text-center md:text-left">
-                <h1 class="text-2xl md:text-4xl font-bold text-gray-300">Rizki Ahmad Wahyu</h1>
-                <p class="text-sm md:text-lg text-gray-300">rizkiahmadwahyu27@gmail.com</p>
-                <p class="text-xs md:text-sm text-gray-300">Desa Sukaurip, Kec. Balongan, Kab. Indramayu</p>
+                <h1 class="text-xl md:text-4xl font-bold text-gray-600">Rizki Ahmad Wahyu</h1>
+                <p class="text-sm md:text-lg text-gray-600">rizkiahmadwahyu27@gmail.com</p>
+                <p class="text-xs md:text-sm text-gray-600">Desa Sukaurip, Kec. Balongan, Kab. Indramayu</p>
               </div>
           
               <!-- Kolom Navigasi -->
               <div>
-                <h2 class="text-lg md:text-xl font-bold text-gray-300 mb-3">Link</h2>
-                <ul class="space-y-2 text-sm md:text-base">
-                  <li><a href="#home" class="text-gray-300 hover:text-blue-400 hover:underline">Home</a></li>
-                  <li><a href="#about" class="text-gray-300 hover:text-blue-400 hover:underline">About Me</a></li>
-                  <li><a href="#portofolio" class="text-gray-300 hover:text-blue-400 hover:underline">Portfolio</a></li>
-                  <li><a href="#skills" class="text-gray-300 hover:text-blue-400 hover:underline">Skills</a></li>
-                  <li><a href="#experience" class="text-gray-300 hover:text-blue-400 hover:underline">Experience</a></li>
-                  <li><a href="#sertifikat" class="text-gray-300 hover:text-blue-400 hover:underline">Certificate</a></li>
+                <h2 class="text-lg md:text-xl font-bold text-gray-600 mb-3">Link</h2>
+                <ul class="text-sm md:text-base mt-2">
+                  <li><a href="#home" class="text-gray-600 hover:text-blue-400">Home</a></li>
+                  <li><a href="#about" class="text-gray-600 hover:text-blue-400">About Me</a></li>
+                  <li><a href="#portofolio" class="text-gray-600 hover:text-blue-400">Portfolio</a></li>
+                  <li><a href="#skills" class="text-gray-600 hover:text-blue-400">Skills</a></li>
+                  <li><a href="#experience" class="text-gray-600 hover:text-blue-400">Experience</a></li>
+                  <li><a href="#sertifikat" class="text-gray-600 hover:text-blue-400">Certificate</a></li>
                 </ul>
               </div>
             </div>
-          </footer>      
+          </footer>     
     </div>
